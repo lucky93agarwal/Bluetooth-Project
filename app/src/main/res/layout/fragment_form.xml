@@ -1,0 +1,990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context=".FragmentNew.FormFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CASE RECORD FORM"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PATIENT IDENTIFICATION DATA"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_calendar"
+                        />
+                    <EditText
+                        android:id="@+id/cerebo_scan_dateet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="CEREBO SCAN DATE"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_calendar"
+                        />
+                    <EditText
+                        android:id="@+id/cerebo_scan_dateetet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="CEREBO SCAN TIME"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/record_idet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="RECORD ID"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/hospital_patient_idet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="HOSPITAL PATIENT ID (Optional)"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/patient_nameet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="PATIENT NAME"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENDER"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/radioSex"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/radioMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MALE"
+                        android:checked="true" />
+
+                    <RadioButton
+                        android:id="@+id/radioFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FEMALE" />
+
+                    <RadioButton
+                        android:id="@+id/radioother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTHERS " />
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/ageet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="AGE"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SKIN COLOUR"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/skincolorrg"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLACK" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WHITE" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BROWN" />
+
+                </RadioGroup>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hair Density"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/hairdensity"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/lowrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOW" />
+
+                    <RadioButton
+                        android:id="@+id/mediumrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MEDIUM" />
+
+                    <RadioButton
+                        android:id="@+id/highrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIGH" />
+
+                    <RadioButton
+                        android:id="@+id/baldrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BALD" />
+
+                </RadioGroup>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HEAD INJURY DETAILS"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="METHOD OF REACHING HOSPITAL"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/method_of_reaching_hospitalrg"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/ambulancerbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AMBULANCE" />
+
+                    <RadioButton
+                        android:id="@+id/policebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="POLICE" />
+
+                    <RadioButton
+                        android:id="@+id/walkinbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="WALK-IN" />
+
+                    <RadioButton
+                        android:id="@+id/privatevehiclebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PRIVATE VEHICLE " />
+
+
+
+                    <RadioButton
+                        android:id="@+id/othersbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTHERS " />
+
+                </RadioGroup>
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TYPE OF ACCIDENT"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/type_of_accidentrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/road_traffic_accidentbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ROAD TRAFFIC ACCIDENT " />
+
+                    <RadioButton
+                        android:id="@+id/fallbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FALL " />
+
+                    <RadioButton
+                        android:id="@+id/strokebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="STROKE " />
+
+                    <RadioButton
+                        android:id="@+id/sports_injurybtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SPORTS INJURY " />
+
+
+
+                    <RadioButton
+                        android:id="@+id/otherssbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTHERS " />
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GEOGRAPHICAL LOCATION OF ACCIDENT"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/geographical_location_of_accidentrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/urbanbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="URBAN" />
+
+                    <RadioButton
+                        android:id="@+id/ruralrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RURAL" />
+
+                    <RadioButton
+                        android:id="@+id/highwayrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HIGHWAY " />
+
+                    <RadioButton
+                        android:id="@+id/cityrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="CITY" />
+
+
+                </RadioGroup>
+
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PART OF HEAD THAT WAS AFFECTED"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/part_of_head_that_was_affectedrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/foreheadrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FOREHEAD " />
+
+                    <RadioButton
+                        android:id="@+id/back_of_headbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BACK OF HEAD" />
+
+                    <RadioButton
+                        android:id="@+id/lefthemisphere_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LEFT HEMISPHERE " />
+
+                    <RadioButton
+                        android:id="@+id/right_hemisphere_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RIGHT HEMISPHERE" />
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/top_of_head_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOP OF HEAD" />
+
+                    <RadioButton
+                        android:id="@+id/othersbtn_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="OTHER" />
+
+
+                </RadioGroup>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DID YOU DIRECTLY COME TO HOSPITAL AFTER INJURY/SYMPTOM? "
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/hospital_after_injuryrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/yesrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES " />
+
+                    <RadioButton
+                        android:id="@+id/norbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+
+
+
+
+                </RadioGroup>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/etif_no_where_did_you_go_firstet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="IF NO, WHERE DID YOU GO FIRST.. "
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline_calendar"
+                        />
+                    <EditText
+                        android:id="@+id/etdate_of_symptomset"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="DATE OF SYMPTOMS"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SYMPTOMS EXPERIENCED "
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/symptomsrbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/doublerbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOUBLE VISION " />
+
+                    <RadioButton
+                        android:id="@+id/headachebtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="HEADACHE" />
+
+
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/loss_of_memorybtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOSS OF MEMORY" />
+
+                    <RadioButton
+                        android:id="@+id/blurred_visionbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BLURRED VISION" />
+
+
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/pain_in_and_around_eyesbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PAIN IN AND AROUND EYES" />
+
+                    <RadioButton
+                        android:id="@+id/vomitingrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VOMITING, DIZZINESS" />
+
+
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/restrictedrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESTRICTED FIELD OF VIEW" />
+
+                    <RadioButton
+                        android:id="@+id/lossrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LOSS OF BALANCE" />
+
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/disorientatirbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DISORIENTATION" />
+
+                    <RadioButton
+                        android:id="@+id/flashes_of_lightrbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FLASHES OF LIGHT" />
+
+
+
+
+                    <RadioButton
+                        android:id="@+id/restrictedbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESTRICTED MOTION" />
+
+
+
+
+                </RadioGroup>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/etgcs_scoreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="GCS SCORE"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GCS REPORT UPLOADED"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/gcs_report_uploaded_rgbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/yesrgbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES " />
+
+                    <RadioButton
+                        android:id="@+id/norgbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+
+
+
+
+                </RadioGroup>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CT SCAN UPLOADED"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/ct_scan_uploadedbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/yesgcs_report_uploaded_rgbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES " />
+
+                    <RadioButton
+                        android:id="@+id/nogcs_report_uploaded_rgbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+
+
+
+
+                </RadioGroup>
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/any_other_remarks_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="ANY OTHER REMARKS"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OTHER BODY PARAMETERS"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/blood_pressure_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="BLOOD PRESSURE"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IS A HIGH BLOOD PRESSURE PATIENT"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"/>
+                <RadioGroup
+                    android:id="@+id/is_a_high_blood_pressure_patientbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_height="wrap_content" >
+
+                    <RadioButton
+                        android:id="@+id/yesbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="YES " />
+
+                    <RadioButton
+                        android:id="@+id/nobtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="NO" />
+
+
+
+
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/if_yes_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="IF YES, SINCE "
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_baseline"
+                        />
+                    <EditText
+                        android:id="@+id/any_othere_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="ANY OTHER "
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi"
+        style="@style/AVLoadingIndicatorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:indicatorColor="#7ac920"
+        app:indicatorName="BallPulseIndicator" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:layout_weight="0.08">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="SAVE"
+            android:background="#FF0000"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+</LinearLayout>
